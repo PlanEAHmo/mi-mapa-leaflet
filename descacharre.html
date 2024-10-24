@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mapa con Leaflet y GeoJSON</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <style>
+        #map {
+            width: 100%;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script>
+        // Crear el mapa
+        var map = L.map('map').setView([29.072967, -110.955919], 12);
+
+        // Agregar el fondo del mapa desde OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Cargar el archivo GeoJSON desde Google Drive usando el ID del archivo
+        var geojsonUrl = 'https://www.googleapis.com/drive/v3/files/1abcXYZ12345?alt=media&key=YOUR_GOOGLE_API_KEY';
+
+        // Obtener los datos GeoJSON y agregarlos al mapa
+        fetch(geojsonUrl)
+        .then(response => response.json())
+        .then(data => {
+            L.geoJSON(data).addTo(map);
+        })
+        .catch(error => console.error('Error al cargar el GeoJSON:', error));
+    </script>
+</body>
+</html>
