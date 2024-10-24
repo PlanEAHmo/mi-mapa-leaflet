@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "Descacharre",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Polígono 1 NORTE", "description": "DESCACHARRE CHOYAL 10-11 OCTUBRE 2024<br>20 TONELADAS.", "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -110.9923946, 29.109182, 0.0 ], [ -110.9923839, 29.1064729, 0.0 ], [ -110.9859895, 29.1072416, 0.0 ], [ -110.9864187, 29.1099038, 0.0 ], [ -110.9923946, 29.109182, 0.0 ] ] ] } },
+{ "type": "Feature", "properties": { "Name": "Polígono 2 SUR ", "description": "DESCACHARRE CHOYAL  10-11 OCTUBRE 2024<br>61.5 TONELADAS.", "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -110.9923196, 29.1059765, 0.0 ], [ -110.992341, 29.1032673, 0.0 ], [ -110.9854531, 29.1040641, 0.0 ], [ -110.9858286, 29.1067733, 0.0 ], [ -110.9923196, 29.1059765, 0.0 ] ] ] } },
+{ "type": "Feature", "properties": { "Name": "Polígono 3", "description": "CARMEN SERDAN VIERNES 25 DE OCTUBRE.", "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -110.9912454, 29.1390648, 0.0 ], [ -110.9910362, 29.137645, 0.0 ], [ -110.9860097, 29.1382823, 0.0 ], [ -110.9862511, 29.1397114, 0.0 ], [ -110.9912454, 29.1390648, 0.0 ] ] ] } }
+]
+}
